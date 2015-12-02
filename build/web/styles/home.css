@@ -1,0 +1,91 @@
+/*Copyright (c) 2015 Maddie Chili and Lawrence Mullen*/
+body{
+    font-family: 'Arial', sans-serif;
+    margin: auto 0;
+}
+img{
+    display:block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+h1{
+    text-align: center;
+}
+h2{
+   text-indent: 1em; 
+}
+#red{
+    border: 2px solid red;
+    max-width: 93%;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+a{
+    display: block;
+    font-weight: bold;
+    padding-left: 1em;
+
+}
+#check{
+    padding-top: 1em;
+}
+#manage{
+    padding-bottom: 1.5em;
+}
+form{
+    margin-left: 1.5em;
+}
+#email,
+#first_name,
+#last_name{
+    width: 15em;
+}
+#email{
+ margin-left: 2.5em;   
+}
+#first_name{
+ margin-left: 4.8em;   
+}
+#last_name{
+ margin-left: 4.9em;   
+}
+
+#title{
+   margin-left: 5.45em;
+   width: 25em;
+}
+label{
+    line-height: 1.5em;
+}
+
+#checkout{
+    margin-bottom: 1em;
+    margin-left: 12.5em;
+    margin-top: 1em;
+}
+#thanks{
+   padding-left: 1.5em;
+   padding-top: 1em;
+   padding-right: 1em;
+}
+#return{
+   margin-bottom: 2em; 
+   padding-left: 1.5em;
+
+}
+table{
+    margin-bottom: 2.5em;
+}
+#first{
+    padding-left: 2.5em;
+}
+th{
+   padding-left: 4em;
+}
+footer{
+    border-top: 2px solid navy;
+    text-indent: 2em;
+    margin-top: 2em;
+}
