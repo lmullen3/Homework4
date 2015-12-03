@@ -5,7 +5,7 @@
         <h1>Belk Library</h1>
         <div id="red">
         <h2>Checkout a book</h2>
-        <form id="checkout-form" action="servlet" name="checkout-form" method="post">
+        <form id="checkout-form" action="library" name="checkout-form" method="post">
                     <input type="hidden" name="action" value="userInput">
                     <label for="first_name">First Name:</label>
                     <input type="text" id="first_name" name="first_name" required/>

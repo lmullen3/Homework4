@@ -1,3 +1,7 @@
+/* Copyright (c) 2015 Maddie Chili and Lawrence Mullen */
+
+USE app02lawrence;
+CREATE DATABASE IF NOT EXISTS app02lawrence;
 CREATE TABLE `User` (
   `FirstName` varchar(50) DEFAULT NULL,
   `LastName` varchar(50) DEFAULT NULL,
@@ -6,4 +10,4 @@ CREATE TABLE `User` (
   `DueDate` varchar(45) DEFAULT NULL,
   `Overdue` varchar(45) NOT NULL,
   PRIMARY KEY (`BookTitle`)
-) 
+); 

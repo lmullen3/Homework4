@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context antiJARLocking="true" path="/HomeworkCopyV2">
-  <Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" logAbandoned="true" maxActive="100" maxIdle="30" maxWait="10000" name="jdbc/MySQLDS" password="" removeAbandoned="true" removeAbandonedTimeout="60" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3307/app02lawrence" username="root"/>
+<Context antiJARLocking="true" path="/Homework4">
+  <Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" logAbandoned="true" 
+            maxActive="100" maxIdle="30" maxWait="10000" name="jdbc/MySQLDS" password="TePCNC8yl7vq" 
+            removeAbandoned="true" removeAbandonedTimeout="60" 
+            type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/app02lawrence" username="admin1eMRtqZ"/>
 </Context>

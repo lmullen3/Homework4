@@ -1,10 +1,8 @@
 package edu.elon.admin;
-
 import java.io.*;
 import java.util.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
-
 import edu.elon.business.User;
 import edu.elon.data.BookDB;
 import java.text.ParseException;
@@ -12,8 +10,21 @@ import java.text.SimpleDateFormat;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+//Copyright (c) 2015 Maddie Chili and Lawrence Mullen
+
+/**
+ *
+ * @author lawrencemullen && maddiechili
+ */
 public class Servlet extends HttpServlet {
 
+    /**
+     *do post method for servlet control
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     @Override
     protected void doPost(HttpServletRequest request,
             HttpServletResponse response)
@@ -99,6 +110,13 @@ public class Servlet extends HttpServlet {
                 .forward(request, response);
     }    
     
+    /**
+     *do get method for servlet control
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     @Override
     protected void doGet(HttpServletRequest request,
             HttpServletResponse response)

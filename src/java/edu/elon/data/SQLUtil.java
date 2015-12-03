@@ -2,8 +2,16 @@
 
 import java.sql.*;
 
+/**
+ *
+ * @author lawrencemullen && maddiechili
+ */
 public class SQLUtil {
 
+    /**
+     * close the sql statement
+     * @param s
+     */
     public static void closeStatement(Statement s) {
         try {
             if (s != null) {
@@ -14,6 +22,10 @@ public class SQLUtil {
         }
     }
 
+    /**
+     *close the prepared sql statement
+     * @param ps
+     */
     public static void closePreparedStatement(Statement ps) {
         try {
             if (ps != null) {
@@ -24,6 +36,10 @@ public class SQLUtil {
         }
     }
 
+    /**
+     *close the result set 
+     * @param rs
+     */
     public static void closeResultSet(ResultSet rs) {
         try {
             if (rs != null) {

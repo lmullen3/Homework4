@@ -21,13 +21,13 @@ Copyright (c) 2015 Maddie Chili and Lawrence Mullen
                 
   <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
   <c:forEach var="user" items="${users}">
-  <tr>
+  <tr id="peeps">
     <td>${user.firstName}  ${user.lastName}</td>
     <td>${user.email}</td>
     <td>${user.title}</td>
     <td>${user.dueDate}</td>
     <td>${user.overdue}</td>
-    <td><form action="servlet" method="post">
+    <td><form action="library" method="post">
             <input type="hidden" name="action" value="delete" >
             <input type ="hidden" name="title" value="${user.title}">
             <input type="submit" value="Check In">
@@ -37,7 +37,6 @@ Copyright (c) 2015 Maddie Chili and Lawrence Mullen
   </c:forEach>
             </table>
      
-           <a id="return" href="home.jsp">Return to front page</a>
-        </div>  
+<a id="return" href="<c:url value ='library?action=goHome'/>"> Return to the front page</a>        </div>  
     </body>
 <%@include file="/includes/footer.jsp" %>

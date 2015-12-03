@@ -84,8 +84,12 @@ table{
 th{
    padding-left: 4em;
 }
+tr#peeps{
+    text-align: right;
+}
 footer{
     border-top: 2px solid navy;
     text-indent: 2em;
     margin-top: 2em;
+    
 }

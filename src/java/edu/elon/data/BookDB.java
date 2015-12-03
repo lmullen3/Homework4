@@ -5,8 +5,17 @@ import java.util.ArrayList;
 
 import edu.elon.business.User;
 
+/**
+ *
+ * @author lawrencemullen && maddiechili
+ */
 public class BookDB {
 
+    /**
+     * inserts a user into the book database
+     * @param user
+     * @return sql statement
+     */
     public static int insert(User user) {
         ConnectionPool pool = ConnectionPool.getInstance();
         Connection connection = pool.getConnection();
@@ -33,7 +42,11 @@ public class BookDB {
         }
     }
 
-
+    /**
+     * deletes a user from the database based on book title
+     * @param title
+     * @return sql statement
+     */
     public static int delete(String title) {
         ConnectionPool pool = ConnectionPool.getInstance();
         Connection connection = pool.getConnection();
@@ -55,7 +68,11 @@ public class BookDB {
         }
     }
 
-
+    /**
+     * selects a given user from the database based on book title
+     * @param title
+     * @return a user
+     */
     public static User selectUser(String title) {
         ConnectionPool pool = ConnectionPool.getInstance();
         Connection connection = pool.getConnection();
@@ -89,6 +106,11 @@ public class BookDB {
         }
     }
     
+    /**
+     * updates the user database
+     * @param user
+     * @return 0
+     */
     public static int update(User user) {
         ConnectionPool pool = ConnectionPool.getInstance();
         Connection connection = pool.getConnection();
@@ -123,6 +145,10 @@ public class BookDB {
         }
     }
     
+    /**
+     *
+     * @return
+     */
     public static ArrayList<User> selectUsers() {
         ConnectionPool pool = ConnectionPool.getInstance();
         Connection connection = pool.getConnection();
